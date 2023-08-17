@@ -1,0 +1,107 @@
+.footer {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+
+.footer h4 {
+  margin-top: 0;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+/* Loading Indicator Styles */
+.loading-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Adjust the height as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Apply a subtle blur effect */
+  position: relative; /* For positioning the spinner */
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #3498db; /* Circle color */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  position: absolute; /* Position spinner at the center */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Analysis Result Styles */
+.analysis-result {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 20px;
+}
+
+.input-container {
+  margin-top: 20px;
+
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.analysis-result h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.analysis-result pre {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.keywords {
+  margin-top: 20px;
+}
+
+.keywords h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.keywords ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow keywords to wrap to the next line */
+}
+
+.keywords li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  white-space: nowrap; /* Prevent keywords from breaking to new lines */
+}
+.spaced-btn {
+  margin-right: 10px;
+}
